@@ -79,7 +79,11 @@ class _LoginScreenState extends State<LoginScreen>{
                     onPressed: login,
                     child: const Text("Login"),
                   ),
-                )
+                ),
+                TextButton(onPressed: (){
+                    Navigator.pushNamed(context, '/signup');
+                }, 
+                child: const Text("Create Account"))
               ],
             ),
           ),
